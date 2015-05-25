@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>沃玩家-51总动员集宝赢大礼</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header class="header fn-clear">
+    <a title="返回" href="javascript:go(-1);" class="icon icon-back fn-left"></a>
+    <h2>辩宝石</h2>
+    <a title="首页" href="#" class="icon icon-home fn-left"></a>
+</header>
+<!--header end-->
+<!--main start-->
+<div class="identify-main">
+    <div class="stone-list">
+      <div class="identify-stone viewport-flip" id="stoneArea1">
+          <a href="#" class="stone flip out"><img src="images/stone-back.jpg" alt="背面"></a>
+          <a href="#" class="stone flip"><img src="images/stone-lose.jpg" alt="正面"></a>
+      </div>
+      <div class="identify-stone viewport-flip" id="stoneArea2">
+          <a href="#" class="stone flip out"><img src="images/stone-back.jpg" alt="背面"></a>
+          <a href="#" class="stone flip"><img src="images/stone-win.jpg" alt="正面"></a>
+      </div>
+      <div class="identify-stone viewport-flip" id="stoneArea3">
+          <a href="#" class="stone flip out"><img src="images/stone-back.jpg" alt="背面"></a>
+          <a href="#" class="stone flip"><img src="images/stone-lose.jpg" alt="正面"></a>
+      </div>
+     </div>
+      <div class="action">
+          <a href="javascript:;" class="iBtn igold" id="identify-start">开始辨宝石</a>
+          <span class="identify-tip" id="JidentifyTip" style="display:none">看准哦~找到真正的宝石</span>
+      </div>
+    <!-- 机会次数 -->
+    <input id="chgNum" type="hidden" value="1" >
+    <!--结果弹出层-->
+    <!--机会用完-->
+    <div id="noFreeNumDialog" class="popup-wrap fn-hide">
+        <div class="J_Popup popup">
+            <div class="con">免费机会已用完，寻宝一次将扣除<span class="cred">20魔法币</span>哦~</div>
+            <div class="bot">
+                <a class="J_Find btn-go" href="javascript:;">确定</a>
+                <a class="J_Close btn-go" href="javascript:;">取消</a>
+            </div>
+        </div>
+    </div>
+    <!--魔法币不足-->
+    <div id="noMagicDialog" class="popup-wrap fn-hide">
+        <div class="J_Popup popup">
+            <div class="con">魔法币余额不足，<a class="cred" href="#">去赚取>></a></div>
+            <div class="bot">
+                <a class="J_Close btn-go" href="javascript:;">确定</a>
+            </div>
+        </div>
+    </div>
+    <!--未中奖-->
+    <div id="noJewelDialog" class="popup-wrap fn-hide">
+        <div class="J_Popup popup">
+            <div class="con">
+                <p>运气不好，宝石与你擦肩而过！</p>
+                <div class="stone-box">
+                    <img src="images/stone-gray.png">
+                </div>
+            </div>
+            <div class="bot">
+                <a class="J_Close btn-go J_again" href="javascript:;">再来一局</a>
+                <a class="btn-go" href="#">宝石排名</a>
+                <a class="J_ShareBtn btn-go" href="javascript:;">分享给好友</a>
+            </div>
+        </div>
+    </div>
+    <!--中奖-->
+    <div id="getJewelDialog" class="popup-wrap fn-hide">
+        <div class="popup">
+            <div class="con">
+                <p>石头变宝石啦~真是火眼金睛！</p>
+                <p><span id='jewelNum' class="cred">5</span> 个宝石到手！</p>
+                <div class="stone-box">
+                    <img src="images/stone-bright.png">
+                </div>
+            </div>
+            <div class="bot">
+                <a class="J_Close btn-go J_again" href="javascript:;">再来一局</a>
+                <a class="btn-go" href="#">宝石排名</a>
+                <a class="J_ShareBtn btn-go" href="javascript:;">分享给好友</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-hd">
+    <h2>赚取魔法币沃有妙招</h2>
+</div>
+<ul class="app-list fn-clear">
+    <li>
+        <a href="#">
+            <img src="images/shake.jpg" width="60%">
+            <p>摇一摇</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/scissors.jpg" width="60%">
+            <p>剪刀石头布</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/luky.jpg" width="60%">
+            <p>幸运转转转</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/bottle.jpg" width="60%">
+            <p>魔法瓶</p>
+        </a>
+    </li>
+</ul>
+<!--main end-->
+<!--to top-->
+<div class="to-top fn-clear">
+    <a class="fn-left" href="#">登录</a>
+    <a id="toTop" class="icon icon-up fn-right">Top</a>
+</div>
+<!--footer-->
+<footer class="footer">
+    <p>沃玩家</p>
+    <p>鲁ICP备05021501号 许可证：A2.B1.B2-20050001</p>
+    <p><span class="icon icon-unicom">Copyright © 中国联通</span></p>
+</footer>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

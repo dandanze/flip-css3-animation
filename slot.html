@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>沃玩家-51总动员集宝赢大礼</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header class="header fn-clear">
+    <a title="返回" href="javascript:go(-1);" class="icon icon-back fn-left"></a>
+    <h2>猜数字赢宝石</h2>
+    <a title="首页" href="#" class="icon icon-home fn-left"></a>
+</header>
+<!--header end-->
+<!--main start-->
+<div class="slot-main">
+    <div class="slot-txt" id="slot-tip">
+        <strong>嘘~</strong>
+        <p>滑动选择“1或3个”幸运数字就能打开宝箱哦</p>
+    </div>
+    <!-- slot machine -->
+    <div class="slot-machine">
+        <div class="machine"><img src="images/slot.png" alt=""></div>
+        <div class="slot-play">
+            <div class="slot-mation">
+                <div class="mation" id="mation-1"><img src="images/slot-num.png" alt=""></div>
+            </div>
+            <div class="slot-mation">
+                <div class="mation" id="mation-2"><img src="images/slot-num.png" alt=""></div>
+            </div>
+            <div class="slot-mation">
+                <div class="mation" id="mation-3"><img src="images/slot-num.png" alt=""></div>
+            </div>
+            <audio id="openAudio" src="slot.mp3" preload="preload"></audio>
+        </div>
+        <div class="slot-btn fn-hide" id="Jopen"><a href="javascript:;">开箱</a></div>
+    </div>
+    <div class="slot-tip">每日<strong id="slotChg">3</strong>次免费机会!</div>
+    <!-- /slot machine -->
+    <!-- chest -->
+    <div class="slot-chest" id="slot-chest">
+        <img src="images/slotBox.png" alt="">
+    </div>
+    <!-- /chest -->
+    <!-- 开奖 -->
+    <!--中奖-->
+    <div id="slotDialog" class="popup-wrap fn-hide">
+        <div class="popup popup-slot">
+            <div class="con">
+                <header>
+                    <h2>开奖号码<em>(虚拟开奖) </em></h2>
+                </header>
+                <div class="slotRes">
+                    <span class="slotResNum" id="slotResNum1">8</span>
+                    <span class="slotResNum" id="slotResNum2">7</span>
+                    <span class="slotResNum" id="slotResNum3">1</span>
+                </div>
+                <div class="slotPrize">
+                    <ul>
+                        <li>
+                            <h3>开奖结果</h3>
+                            <div class="stone-box">
+
+                                <p> <span id='jewelNum' class="cred">100</span>个魔法币  </p>
+                                <img src="images/slot-mfb.png">
+                            </div>
+                        </li>
+                        <li>
+                            <h3>本局赢宝</h3>
+                            <div class="stone-box">
+
+                                <p> <span id='jewelNum' class="cred">10</span>个宝石 </p>
+                                <img src="images/stone-bright.png">
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="bot">
+                <a class="btn-go " href="javascript:;" id="J_again">再来一局</a>
+                <a class="btn-go" href="#">宝石排名</a>
+                <a class="J_ShareBtn btn-go" href="javascript:;">分享给好友</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="index-hd">
+    <h2>赚取魔法币沃有妙招</h2>
+</div>
+<ul class="app-list fn-clear">
+    <li>
+        <a href="#">
+            <img src="images/shake.jpg" width="60%">
+            <p>摇一摇</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/scissors.jpg" width="60%">
+            <p>剪刀石头布</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/luky.jpg" width="60%">
+            <p>幸运转转转</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/bottle.jpg" width="60%">
+            <p>魔法瓶</p>
+        </a>
+    </li>
+</ul>
+<!--main end-->
+<!--to top-->
+<div class="to-top fn-clear">
+    <a class="fn-left" href="#">登录</a>
+    <a id="toTop" class="icon icon-up fn-right">Top</a>
+</div>
+<!--footer-->
+<footer class="footer">
+    <p>沃玩家</p>
+    <p>鲁ICP备05021501号 许可证：A2.B1.B2-20050001</p>
+    <p><span class="icon icon-unicom">Copyright © 中国联通</span></p>
+</footer>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/slot.js"></script>
+</body>
+</html>
